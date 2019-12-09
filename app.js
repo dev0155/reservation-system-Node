@@ -2,7 +2,7 @@ let express = require('express');
 let cors = require('cors');
 let mongoose = require('mongoose');
 let app = express();
-let mainRouter = require('./router/main');
+let mainRouter = require('./routes/main');
 mongoose.connect('mongodb://localhost:27017/moments', ({useNewUrlParser: true}));
 
 app.use(cors({origin: '*'}));
